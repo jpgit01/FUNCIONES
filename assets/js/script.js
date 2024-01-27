@@ -22,5 +22,5 @@ function pintar(color="green"){
     }
 
     ele.addEventListener("click", ()=>{
-        pintar()
+        pintar("yellow")
     });
