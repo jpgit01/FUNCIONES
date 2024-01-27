@@ -17,10 +17,10 @@ párrafo se debe pasar amarillo como color. (1 Punto).
 
 const ele = document.getElementById("ele1");
 
-function pintar(color="green"){
-    ele.style.backgroundColor = color
+function pintar(variable, color="green"){
+    variable.style.backgroundColor = color
     }
 
     ele.addEventListener("click", ()=>{
-        pintar("yellow")
+        pintar(ele,"yellow")
     });
