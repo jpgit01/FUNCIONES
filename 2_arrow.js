@@ -1,9 +1,9 @@
 //Transforma la siguiente función a una arrow function de una línea.
-let suma = function(a, b){
+/*let suma = function(a, b){
     return a + b
-    }
+    }*/
     
 //respuesta
-let sumaArrow = (a, b) => a + b;
+let suma = (a, b) => a + b;
 
-console.log(sumaArrow(2,2))
+console.log(suma(2,2))
