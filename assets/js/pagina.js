@@ -10,11 +10,13 @@ function addElement() {
 }
 
 //creacion de la funcion para agregar div a las teclas q, w, e
-function addElementSegundo() {
-    let newDiv = document.createElement("div");
-    newDiv.setAttribute("id", "keySegundo");
+function addElementSegundo(color) {
+    const newDiv = document.createElement("div");
     document.body.appendChild(newDiv);
-    let keySegundo = document.getElementById("keySegundo").setAttribute("style","width:200px; height: 200px; backgroundColor: white; border: 5px solid black");
+    newDiv.style.width = "200px"
+    newDiv.style.height = "200px"
+    newDiv.style.border = "5px solid black"
+    newDiv.style.backgroundColor = color
 }
 
 
@@ -39,15 +41,16 @@ document.addEventListener("keydown", function (event) {
     
   } else if (event.key === "q") {
     /* Crear 4 */
-    color = "Purple";
-    key.style.backgroundColor = color;
+    color = "purple"
+    addElementSegundo(color) 
+
   } else if (event.key === "w") {
     /* Crear 5 */
     color = "grey";
-    key.style.backgroundColor = color;
+    addElementSegundo(color) 
   } else if (event.key === "e") {
     /* Crear 6 */
     color = "DarkSalmon";
-    key.style.backgroundColor = color;
+    addElementSegundo(color) 
   }
 });
