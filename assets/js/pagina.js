@@ -19,8 +19,6 @@ function addElementSegundo(color) {
     newDiv.style.backgroundColor = color
 }
 
-
-
 let color = "";
 
 document.addEventListener("keydown", function (event) {
